@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Silkscreen', cursive;
+    text-align: center;
+    cursor: url(../img/icons8-epée-minecraft-32.png), auto;
+}
+
+body {
+    background: url(../img/1008904.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* INDEX */
+.home {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 330px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/****************/
+
+/* Message d'erreur */
+
+.showerror {
+    top: 70%;
+    right: 35%;
+    position: absolute;
+}
+
+.showerror>p {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.error {
+    list-style: none;
+    color: red;
+    font-weight: bold;
+}
+
+/*******************/
+
+/* Page Register */
+
+.container {
+    width: 500px;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 6px;
+    box-shadow: 0 0 5px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 70px;
+    padding: 2rem;
+}
+
+form {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+}
+
+.champ-form {
+    margin: 20px;
+    margin: auto;
+}
+
+
+.form_in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    cursor: text;
+}
+
+/* Correction decalage texte plus long d'Input mdp*/
+.form_inmdp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    margin-left: 35px;
+}
+
+/*******************************************************/
+
+.form_lab {
+    font-size: 18px;
+    margin: auto;
+    text-align: left;
+    outline: none;
+}
+
+.sign {
+    text-align: center;
+    padding: 15px;
+}
+
+.sign>a {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: white;
+}
+
+
+.valide {
+    margin: auto;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 30%;
+    background: transparent;
+    margin-top: 20px;
+    width: 120px;
+    height: 40px;
+    transition: 0.4s ease;
+}
+
+.valide:hover {
+    box-shadow: inset 0 0 0 30px rgb(59, 59, 59), 1px 1px 3px purple;
+    transform: color translateX(4px);
+    color: white;
+}
+
+.valide:active {
+    transform: scale(0.95);
+}
+
+/*******************************/
+
+/* Connexion */
+
+.containerlog {
+    background-color: rgba(255, 255, 255, 0.466);
+    width: 400px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 6px;
+    box-shadow: 0 0 5px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 70px;
+    padding: 2rem;
+}
+
+/*********************************/
+
+/* Account */
+
+.containeracc {
+    background-color: rgba(255, 255, 255, 0.466);
+    width: 350px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 6px;
+    box-shadow: 0 0 5px black;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 70px;
+    padding: 2rem;
+}
+
+.myavatar {
+    height: 130px;
+    width: 130px;
+    background-color: rgba(0, 0, 0, 0.699);
+    border-radius: 50%;
+    border: 3px solid rgb(104, 2, 87);
+    margin: auto;
+    margin-top: 30px;
+}
+
+img.avatar {
+    display: flex;
+    width: 100px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.signout {
+    text-align: center;
+    padding: 15px;
+}
+
+.signout>a {
+    color: black;
+}
+
+.signout>a:hover {
+    color: red;
+    cursor: pointer;
+}
+
+/***********************************/
+
+/* NavBar */
+
+.sidebar {
+    position: fixed;
+    width: 15%;
+    height: 100vh;
+    background: rgba(128, 128, 128, 0.349);
+    font-size: 1.2em;
+    top: 0;
+    right: 0;
+}
+
+.nav {
+    position: relative;
+    margin: auto;
+    font-weight: bold;
+}
+
+.nav ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 50px;
+}
+
+li {
+    padding: 60px;
+    position: relative;
+    margin: 2em;
+    font-size: 1.2em;
+    text-align: center;
+    margin: auto;
+}
+
+.profil {
+    position: absolute;
+    top: 0;
+    width: 50px;
+    right: 43%;
+}
+
+/************************/
+
+/* All Articles */
+
+.containerpostarti {
+    background-color: rgba(255, 255, 255, 0.466);
+    width: 500px;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 6px;
+    box-shadow: 0 0 5px black;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    padding: 2rem;
+}
+
+.champ-formarti {
+    padding: 30px;
+}
+
+.showarti {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 11px;
+    margin: auto;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 6px;
+    background: transparent;
+    margin-top: 20px;
+    width: 120px;
+    height: 30px;
+    transition: 0.4s ease;
+}
+
+.showarti:hover {
+    box-shadow: inset 0 0 0 30px rgb(59, 59, 59), 1px 1px 3px purple;
+    transform: color translateX(4px);
+    color: white;
+    cursor: pointer;
+}
+
+.showarti:active {
+    transform: scale(0.95);
+}
+
+.showarti>a {
+    cursor: pointer;
+}
+
+.titre {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.article {
+    font-size: 1.2rem;
+
+}
+
+.auteur {
+    margin-top: 80px;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+
+/***********************/
+
+/* Users articles */
+
+.contain {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 280px;
+    border: 2px solid black;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.466);
+    margin-bottom: 40px;
+}
+
+.edit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    margin: auto;
+    background-color: rgba(255, 255, 0, 0.712);
+    width: 100px;
+    height: 40px;
+    font-size: 0.9rem;
+}
+
+.edit:hover {
+    transform: translateY(3px);
+}
+
+.edit>a:hover {
+    color: black;
+    cursor: pointer;
+}
+
+/************************/
+
+/*  Users Edit  */
+
+.containerarti {
+    background-color: rgba(255, 255, 255, 0.466);
+    width: 500px;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 6px;
+    box-shadow: 0 0 5px black;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    padding: 2rem;
+}
+
+
+.button {
+    display: flex;
+}
+
+.delete {
+    margin: auto;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 30%;
+    background: red;
+    margin-top: 20px;
+    width: 120px;
+    height: 40px;
+    transition: 0.4s ease;
+}
+
+.delete:hover {
+    box-shadow: inset 0 0 0 30px rgb(204, 2, 2), 1px 1px 3px rgb(0, 0, 0);
+    transform: color translateX(4px);
+    color: white;
+}
+
+.delete:active {
+    transform: scale(0.95);
+}
+
+
+.modif {
+    margin: auto;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 30%;
+    background: rgb(2, 179, 2);
+    margin-top: 20px;
+    width: 120px;
+    height: 40px;
+    transition: 0.4s ease;
+}
+
+.modif:hover {
+    box-shadow: inset 0 0 0 30px rgb(1, 190, 42), 1px 1px 3px rgb(0, 0, 0);
+    transform: color translateX(4px);
+    color: white;
+}
+
+.modif:active {
+    transform: scale(0.95);
+}
+
+/* Commentaire */
+
+
+.containcom {
+    background-color: rgba(255, 255, 255, 0.466);
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 6px;
+    box-shadow: 0 0 5px black;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    padding: 1rem;
+}
+
+.com {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.containerpostcom {
+    background-color: rgba(255, 255, 255, 0.466);
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 6px;
+    box-shadow: 0 0 5px black;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    padding: 2rem;
+}
+
+/* DASHBOARD */
+
+h3{
+font-size: 1.8rem;
+}
+
+/*Avatar Admin Profil */
+
+.adminavatar {
+    height: 90px;
+    width: 90px;
+    background-color: rgba(0, 0, 0, 0.699);
+    border-radius: 50%;
+    border: 3px solid rgb(104, 2, 87);
+    margin-top: 30px;
+    position: absolute;
+    left: 92%;
+    bottom: 88%;
+}
+
+.avatarAP {
+    display: flex;
+    width: 70px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+/* Deconnexion */
+
+.signoutdash {
+    position: absolute;
+    left: 90%;
+    bottom: 84%;
+}
+
+.signoutdash > a:hover{
+color:red;
+}
+
+
+/* TABLEAU */
+
+.Dash{
+margin:auto;
+margin-top:100px;
+display:flex;
+}
+
+table.DashTable {
+    margin: auto;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.466);
+    width: 70%;
+    /* border-collapse: collapse; */
+}
+
+table.DashTable td,
+table.DashTable th {
+    border: 1px solid black;
+    padding: 3px 2px;
+}
+
+table.DashTable tbody td {
+    font-size: 13px;
+}
+
+table.DashTable thead {
+    background: #0245979d;
+    background: -moz-linear-gradient(top, #024597ab 0%, #461783 66%, #59095c 100%);
+    background: -webkit-linear-gradient(top, #024597a8 0%, #461783 66%, #59095c 100%);
+    background: linear-gradient(to bottom, #024597a8 0%, #461783 66%, #59095c 100%);
+    border-bottom: 2px solid #444444;
+}
+
+table.DashTable thead th {
+    font-size: 15px;
+    color: white;
+    border-left: 2px solid black;
+}
+
+table.DashTable thead th:first-child {
+    border-left: none;
+}
+
+.avatarindash {
+    width: 50px;
+}
+
+/******************************************/
+
